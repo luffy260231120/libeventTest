@@ -17,10 +17,14 @@ g++ 文件 -levent
 
 # 多文件编译
 chenxinyu@DESKTOP-0TM873U:/mnt/d/cProject/libeventTest/httpServer$ g++ -c User.cpp
+
 chenxinyu@DESKTOP-0TM873U:/mnt/d/cProject/libeventTest/httpServer$ g++ httpServerMe.o User.o -o test -levent
+
 chenxinyu@DESKTOP-0TM873U:/mnt/d/cProject/libeventTest/httpServer$ ./test
 
 # 参考：
 https://aceld.gitbooks.io/libevent/content/               libevent深入浅出
+
 http://www.wangafu.net/~nickm/libevent-2.0/doxygen/html/  API
+
 https://www.wandouip.com/t5i261706/                       博文
