@@ -25,8 +25,8 @@ int main(int argc, char *argv[])
     struct sockaddr_in sin;
     sin.sin_family = AF_INET;
     sin.sin_addr.s_addr = 0;
-    sin.sin_port = htons(LISTEN_PORT);
 
+    sin.sin_port = htons(LISTEN_PORT);
     // socket编程
     if (bind(listener, (struct sockaddr *)&sin, sizeof(sin)) < 0) {
         perror("bind");
